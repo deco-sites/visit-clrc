@@ -3,12 +3,15 @@
   "path": "/",
   "sections": [
     {
-      "__resolveType": "site/sections/ItWorks.tsx",
-      "name": "<p>It Works!</p>",
-      "count": 1
-    },
-    {
-      "__resolveType": "Footer"
+      "__resolveType": "site/sections/Login.tsx",
+      "title": "Bem-vindo",
+      "text": "Faça login para acelerar as visitas ao centro logístico",
+      "logo": {
+        "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/visit-clrc/f0e11016-7626-4642-b95d-a548f8856017/clrc2-removebg-preview.png",
+        "alt": "CLRC Logo",
+        "width": 174,
+        "height": 114
+      }
     }
   ],
   "__resolveType": "website/pages/Page.tsx"
