@@ -1,0 +1,35 @@
+{
+  "__resolveType": "site/sections/Sidebar.tsx",
+  "sidebarInfos": {
+    "logo": {
+      "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/visit-clrc/c83228a6-aca8-455c-be84-fc7b0c12ef24/whiteLogo.png",
+      "alt": "CLRC Logo"
+    },
+    "sidebarItems": [
+      {
+        "icon": {
+          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/visit-clrc/77efe3a3-9aa9-4634-a9a7-d999ec8843b8/visitsIcon.png",
+          "alt": "Visits Icon"
+        },
+        "text": "Visitas",
+        "link": "/visitas"
+      },
+      {
+        "icon": {
+          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/visit-clrc/08de7932-eedf-41aa-ba63-9e87bf16de06/collaboratorsIcon.png",
+          "alt": "Colaborators Icon"
+        },
+        "text": "Colaboradores",
+        "link": "/colaboradores"
+      },
+      {
+        "icon": {
+          "src": "https://deco-sites-assets.s3.sa-east-1.amazonaws.com/visit-clrc/47a6fd10-86d2-4ee9-8200-a279162621a4/visitantsIcon.png",
+          "alt": "Visitants Icon"
+        },
+        "text": "Visitantes",
+        "link": "/visitantes"
+      }
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "name": "Visitas",
+  "path": "/visitas",
+  "sections": [
+    {
+      "__resolveType": "site/sections/SideBarLayout.tsx",
+      "sections": [
+        {
+          "__resolveType": "Sidebar"
+        },
+        {
+          "__resolveType": "site/sections/VisitsPage.tsx",
+          "title": "Visitas"
+        }
+      ]
+    }
+  ],
+  "seo": {
+    "__resolveType": "website/sections/Seo/SeoV2.tsx"
+  },
+  "__resolveType": "website/pages/Page.tsx"
+}
