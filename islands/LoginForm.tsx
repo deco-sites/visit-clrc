@@ -21,8 +21,7 @@ export default function LoginForm() {
           <Image
             src={"userIcon.png"}
             alt={"User Icon"}
-            width={100}
-            height={100}
+            width=""
             className="absolute left-3 w-3 h-3"
           />
           <input
@@ -43,8 +42,7 @@ export default function LoginForm() {
           <Image
             src={"lockIcon.png"}
             alt={"User Icon"}
-            width={100}
-            height={100}
+            width=""
             className="absolute left-3 w-3 h-3"
           />
           <input

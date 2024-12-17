@@ -4,17 +4,27 @@
 
 import * as $$$$$$$$$$$0 from "./apps/deco/htmx.ts";
 import * as $$$$$$$$$$$1 from "./apps/site.ts";
-import * as $$$$$$0 from "./sections/Footer.tsx";
-import * as $$$$$$1 from "./sections/ItWorks.tsx";
-import * as $$$$$$2 from "./sections/Login.tsx";
-import * as $$$$$$3 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$0 from "./sections/CollaboratorsPage.tsx";
+import * as $$$$$$1 from "./sections/Footer.tsx";
+import * as $$$$$$2 from "./sections/ItWorks.tsx";
+import * as $$$$$$3 from "./sections/Login.tsx";
+import * as $$$$$$5 from "./sections/Sidebar.tsx";
+import * as $$$$$$4 from "./sections/SideBarLayout.tsx";
+import * as $$$$$$6 from "./sections/Theme/Theme.tsx";
+import * as $$$$$$7 from "./sections/VisitantsPage.tsx";
+import * as $$$$$$8 from "./sections/VisitsPage.tsx";
 
 const manifest = {
   "sections": {
-    "site/sections/Footer.tsx": $$$$$$0,
-    "site/sections/ItWorks.tsx": $$$$$$1,
-    "site/sections/Login.tsx": $$$$$$2,
-    "site/sections/Theme/Theme.tsx": $$$$$$3,
+    "site/sections/CollaboratorsPage.tsx": $$$$$$0,
+    "site/sections/Footer.tsx": $$$$$$1,
+    "site/sections/ItWorks.tsx": $$$$$$2,
+    "site/sections/Login.tsx": $$$$$$3,
+    "site/sections/Sidebar.tsx": $$$$$$5,
+    "site/sections/SideBarLayout.tsx": $$$$$$4,
+    "site/sections/Theme/Theme.tsx": $$$$$$6,
+    "site/sections/VisitantsPage.tsx": $$$$$$7,
+    "site/sections/VisitsPage.tsx": $$$$$$8,
   },
   "apps": {
     "site/apps/deco/htmx.ts": $$$$$$$$$$$0,
