@@ -1,5 +1,5 @@
-import Image from "apps/website/components/Image.tsx";
 import TableTitle from "site/components/ui/TableTitle.tsx";
+import TableRow from "site/components/ui/TableRow.tsx";
 
 export default function Table() {
   return (
@@ -12,23 +12,10 @@ export default function Table() {
           <TableTitle text={"empresa"} />
           <TableTitle text={"nome"} />
           <TableTitle text={"cpf"} />
-          <TableTitle text={"mais"} />
+          <TableTitle text={"mais"} style={"text-center"} />
         </tr>
-        <tr className="border-b border-gray3 border-opacity-20 py-1">
-          <td>17/10/2024</td>
-          <td>123456789</td>
-          <td>Descarregar</td>
-          <td>Nestlé</td>
-          <td>Reginaldo Correa</td>
-          <td>157.062.001-98</td>
-          <td>
-            <Image
-              src={"moreIcon.png"}
-              width=""
-              className="w-4 h-4 cursor-pointer"
-            />
-          </td>
-        </tr>
+        <TableRow />
+        <TableRow />
       </tbody>
     </table>
   );
