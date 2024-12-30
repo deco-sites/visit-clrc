@@ -15,7 +15,12 @@ export default function VisitsPage(
       <PageTitle text={title} />
       <FilterComponent />
       <Table />
-      <Button text={"Nova Visita"} icon={"plusIcon.png"} />
+      <Button
+        text={"Nova Visita"}
+        icon={"plusIcon.png"}
+        link={"nova_visita"}
+        target={"_self"}
+      />
     </div>
   );
 }

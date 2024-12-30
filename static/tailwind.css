@@ -2183,6 +2183,9 @@ html {
 .top-4 {
   top: 1rem;
 }
+.z-10 {
+  z-index: 10;
+}
 .z-50 {
   z-index: 50;
 }
@@ -2235,6 +2238,9 @@ html {
 }
 .mt-6 {
   margin-top: 1.5rem;
+}
+.mt-8 {
+  margin-top: 2rem;
 }
 .mt-\[5px\] {
   margin-top: 5px;
@@ -2324,8 +2330,14 @@ html {
 .min-h-\[42px\] {
   min-height: 42px;
 }
+.w-2\/5 {
+  width: 40%;
+}
 .w-3 {
   width: 0.75rem;
+}
+.w-3\/5 {
+  width: 60%;
 }
 .w-4 {
   width: 1rem;
@@ -2927,6 +2939,9 @@ html {
 }
 .font-bold {
   font-weight: 700;
+}
+.font-light {
+  font-weight: 300;
 }
 .font-normal {
   font-weight: 400;

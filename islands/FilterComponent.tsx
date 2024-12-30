@@ -3,26 +3,46 @@ import InputText from "site/components/InputText.tsx";
 import InputDate from "site/components/InputDate.tsx";
 import InputSelect from "site/components/InputSelect.tsx";
 import { useState } from "preact/hooks";
+import Button from "site/components/ui/Button.tsx";
 
 export default function FilterComponent() {
   const [rotatedIcon, setRotatedIcon] = useState(false);
 
   const handleExpand = () => {
-    console.log("Expandiu");
     setRotatedIcon(!rotatedIcon);
+  };
+
+  const reasonOptions = ["Carregar", "Descarregar"];
+  const companyArr = ["Brastemp", "Nestlé"];
+  const typeOptions = ["Comercial", "Padrão"];
+
+  const Imprimir = () => {
+    console.log("Imprimiu");
+  };
+
+  const Exportar = () => {
+    console.log("Exportou");
   };
 
   return (
     <div className="flex flex-col gap-6">
       <div className="bg-green1 rounded-xl p-8 w-full flex flex-col shadow-xl">
-        <div className="flex justify-between items-end">
-          <div className="flex gap-4">
-            <InputDate />
-            <InputDate />
-            <InputSelect />
-            <InputSelect />
+        <div className="flex items-end">
+          <div className="flex gap-4 w-3/5">
+            <InputDate label={"De:"} id={"start_date"} />
+            <InputDate label={"Até:"} id={"end_date"} />
+            <InputSelect
+              label={"Motivo"}
+              id={"motivo"}
+              options={reasonOptions}
+            />
+            <InputSelect
+              label={"Empresa"}
+              id={"empresa"}
+              options={companyArr}
+            />
           </div>
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 w-2/5 justify-end">
             <button
               className="flex items-center justify-center bg-white3 rounded-full w-8 h-8"
               onClick={handleExpand}
@@ -46,8 +66,30 @@ export default function FilterComponent() {
             rotatedIcon ? "max-h-40" : "max-h-0"
           }`}
         >
-          <div className="mt-4">
-            <InputText label={"Teste"} />
+          <div className="mt-4 flex flex-col gap-4 w-3/5">
+            <div className="flex gap-4">
+              <InputText label={"Placa:"} id={"placa"} />
+              <InputText label={"Nome do Motorista:"} id={"nome"} />
+              <InputText label={"CPF do Motorista:"} id={"cpf"} />
+              <InputSelect
+                label={"Tipo:"}
+                id={"tipo"}
+                options={typeOptions}
+              />
+            </div>
+
+            <div className="flex gap-4">
+              <Button
+                text={"Imprimir"}
+                icon={"/printer.png"}
+                functionToExecute={Imprimir}
+              />
+              <Button
+                text={"Exportar"}
+                icon={"/export.png"}
+                functionToExecute={Exportar}
+              />
+            </div>
           </div>
         </div>
       </div>
