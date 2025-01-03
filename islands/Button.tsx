@@ -6,10 +6,18 @@ interface ButtonProps {
   link?: string;
   target?: string;
   functionToExecute?: () => void;
+  color: "green2" | "green3" | "gray" | "red";
 }
 
+const BUTTON_COLORS = {
+  "green2": "bg-green2",
+  "green3": "bg-green3",
+  "gray": "bg-gray4",
+  "red": "bg-red1",
+};
+
 export default function Button(
-  { text, icon, link, target, functionToExecute }: ButtonProps,
+  { text, icon, link, target, functionToExecute, color }: ButtonProps,
 ) {
   const content = (
     <span className="flex items-center justify-center gap-2">
@@ -22,7 +30,11 @@ export default function Button(
     return (
       <a
         href={link}
-        className="flex items-center justify-center bg-green3 rounded-lg text-white py-2 px-6 w-fit"
+        className={`flex items-center justify-center ${
+          BUTTON_COLORS[color]
+        } rounded-lg ${
+          color === "gray" ? "text-black" : "text-white"
+        } py-2 px-6 w-fit`}
         target={target} // Abre em nova aba (opcional)
         rel="noopener noreferrer" // Para segurança adicional
       >
@@ -34,7 +46,11 @@ export default function Button(
   return (
     <button
       onClick={functionToExecute}
-      className="flex items-center justify-center bg-green3 rounded-lg text-white py-2 px-6 w-fit"
+      className={`flex items-center justify-center ${
+        BUTTON_COLORS[color]
+      } rounded-lg ${
+        color === "gray" ? "text-black" : "text-white"
+      } py-2 px-6 w-fit`}
     >
       {content}
     </button>

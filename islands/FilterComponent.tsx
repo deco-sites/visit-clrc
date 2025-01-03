@@ -3,7 +3,7 @@ import InputText from "site/components/InputText.tsx";
 import InputDate from "site/components/InputDate.tsx";
 import InputSelect from "site/components/InputSelect.tsx";
 import { useState } from "preact/hooks";
-import Button from "site/components/ui/Button.tsx";
+import Button from "./Button.tsx";
 
 export default function FilterComponent() {
   const [rotatedIcon, setRotatedIcon] = useState(false);
@@ -55,10 +55,18 @@ export default function FilterComponent() {
                 }`}
               />
             </button>
+            <Button
+              text={"Filtar"}
+              icon={"/filter.png"}
+              color={"green2"}
+            />
+            {
+              /*
             <button className="flex items-center justify-center gap-1 bg-green2 rounded-lg text-white py-2 px-6">
               <Image src={"filter.png"} width="" />
               Filtrar
-            </button>
+            </button>*/
+            }
           </div>
         </div>
         <div
@@ -83,11 +91,13 @@ export default function FilterComponent() {
                 text={"Imprimir"}
                 icon={"/printer.png"}
                 functionToExecute={Imprimir}
+                color={"green2"}
               />
               <Button
                 text={"Exportar"}
                 icon={"/export.png"}
                 functionToExecute={Exportar}
+                color={"green2"}
               />
             </div>
           </div>

@@ -3,10 +3,13 @@
 // This file is automatically updated during development when running `dev.ts`.
 
 import * as $_app from "./routes/_app.tsx";
+import * as $Button from "./islands/Button.tsx";
 import * as $FilterComponent from "./islands/FilterComponent.tsx";
 import * as $LoginForm from "./islands/LoginForm.tsx";
+import * as $Modal from "./islands/Modal.tsx";
 import * as $SidebarIsland from "./islands/SidebarIsland.tsx";
 import * as $Table from "./islands/Table.tsx";
+import * as $VisitPageIsland from "./islands/VisitPageIsland.tsx";
 import type { Manifest } from "$fresh/server.ts";
 
 const manifest = {
@@ -14,10 +17,13 @@ const manifest = {
     "./routes/_app.tsx": $_app,
   },
   islands: {
+    "./islands/Button.tsx": $Button,
     "./islands/FilterComponent.tsx": $FilterComponent,
     "./islands/LoginForm.tsx": $LoginForm,
+    "./islands/Modal.tsx": $Modal,
     "./islands/SidebarIsland.tsx": $SidebarIsland,
     "./islands/Table.tsx": $Table,
+    "./islands/VisitPageIsland.tsx": $VisitPageIsland,
   },
   baseUrl: import.meta.url,
 } satisfies Manifest;
