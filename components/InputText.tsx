@@ -27,7 +27,7 @@ export default function InputText(
           id={id}
           name={id}
           placeholder={placeholder}
-          className="w-full pl-10 pr-3 py-2 bg-white2 rounded-lg focus:outline-none placeholder:text-black"
+          className="w-full pl-4 pr-3 py-2 bg-white2 rounded-lg focus:outline-none placeholder:text-black"
         />
       </div>
     </div>
